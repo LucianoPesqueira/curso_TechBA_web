@@ -1,0 +1,77 @@
+html{
+
+    scroll-behavior: smooth; /*desplazamiento suave*/
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    padding: 20px;
+    margin-bottom: 2rem;
+}
+#logo_nav{
+    /*aplicar display flex a un contenedor hace que todos los elementos se ubiquen 
+        uno al lado del otro de izq a der por defecto*/
+    display: flex;
+    margin-bottom: 2rem;/*separacion de logo y video*/
+}
+header nav{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-content: center;/*alinea los elementos al centro*/
+}
+header ul{
+    gap:50px;/*espacio entre los elementos*/
+    display: flex;
+    /*space-around: separa los li con un espacio en la izq y en la der*/
+    justify-content: end;
+    flex-wrap: wrap;/*si no hay espacio suficiente, los elementos se acomodan en la siguiente fila*/
+}
+header li{
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+}
+
+img{
+    width: 200px;
+}
+
+iframe{
+    padding: 20px;
+}
+
+main{
+    padding: 1rem;
+    margin:0 20%;
+}
+/*id*/
+#product_container{
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;/*si no entran en el tamaño de pagina actual pasan uno debajo del otro*/
+    justify-content: center;
+}
+
+/*reseñas*/
+.resenias{
+    display: grid;/*separar en columnas*/
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));/*auto ajustable, minimo 15rem, max el ancho disponible*/
+    gap: 1rem;/*espacio entre las columnas*/
+    place-items: center;/*alinea los elementos al centro*/
+}
+.card{
+    background-color: #f5f5f5;
+    border-radius: 10px;/*esquinas redondeadas*/
+    color: #6f8191;
+    width: 15rem;
+}
+.card-name{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}

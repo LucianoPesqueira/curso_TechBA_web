@@ -1,0 +1,50 @@
+/* header */
+header{
+    background-color: aquamarine;
+
+    /*no se debe utilizar*/
+    /*background-color: gray !important;*/
+}
+
+img {
+    width: 150px;
+}
+
+header nav, ul, li{
+    display: block;
+}
+
+header a{
+    text-decoration: none;
+    color: brown;
+}
+
+iframe{
+    display: block;
+}
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+}
+
+/*selector: ID "identificador"*/
+#footerNav ul{
+    list-style: none;
+}
+
+#footerNav a{
+    text-decoration: none;
+    color: white;
+}
+
+/*selector: CLASS "clase"*/
+.textoVerde{
+    color: green;
+    font-size: 2rem;
+}

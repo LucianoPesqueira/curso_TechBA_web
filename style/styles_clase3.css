@@ -1,0 +1,29 @@
+header{
+    color: black;
+    background-color:darkcyan;
+}
+footer {
+    color: white;
+    background-color:gray;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: darkblue;
+    text-decoration: none;
+}
+
+nav, ul, li{
+    display: inline;
+}
+
+ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: azure;
+}

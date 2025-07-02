@@ -1,0 +1,82 @@
+<!--Crear un Formulario de Contacto
+
+Pasos a seguir:
+
+Dentro de la sección <main>, creá un formulario de contacto utilizando Formspree. El formulario debe incluir los siguientes campos:
+
+Nombre (<input type="text">)
+
+Correo electrónico (<input type="email">)
+
+Mensaje (<textarea>)
+-->
+
+<!-- modify this form HTML and place wherever you want your form -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h2 style="color: blue;">Formulario de Consulta</h2>
+        <form action="https://formspree.io/f/movdaypb" method="POST">
+            <div>
+                <label>
+                    Email:
+                    <input type="email" name="email" placeholder="Ingrese su Email" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Mensaje:
+                    <textarea name="message" placeholder="Complete su mensaje" required></textarea>
+                </label>
+            </div>
+            <!-- your other form fields go here -->
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="https://formspree.io/forms" method="POST">
+            <div>
+                <label for="">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="nombre">
+            </div>
+            <div>
+                <label for="">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="email">
+            </div>
+            <div>
+                <label for="">Mensaje:</label>
+                <input type="textarea" id="mensaje" name="mensaje" placeholder="mensaje">
+            </div>
+    
+        </form>
+    </main>
+    
+</body>
+</html>
+
+-->
