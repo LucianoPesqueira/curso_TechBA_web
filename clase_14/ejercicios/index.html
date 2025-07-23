@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Clase 13</title>
+</head>
+
+<body>
+    <h1>Tienda Online</h1>
+
+    <!--PRODUCTOS-->
+    <div id="productos">
+        <h2>Productos Disponibles</h2>
+
+        <ul>
+            <li>
+                Producto 1 - $10
+                <button class="agregar-carrito" data-id="1" data-nombre="Producto 1" data-precio="10">
+                    Agregar al carrito</button>
+            </li>
+            <li>
+                Producto 2 - $15
+                <button class="agregar-carrito" data-id="2" data-nombre="Producto 2" data-precio="15">
+                    Agregar al carrito</button>
+            </li>
+            <li>
+                Producto 1 - $25
+                <button class="agregar-carrito" data-id="3" data-nombre="Producto 3" data-precio="25">
+                    Agregar al carrito</button>
+            </li>
+        </ul>
+    </div>
+
+    <!--CARRITO DE COMPRAS-->
+    <div id="carrito">
+        <h2>Carrito de compras</h2>
+        <ul id="lista-carrito"></ul>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
